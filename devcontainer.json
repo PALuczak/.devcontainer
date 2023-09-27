@@ -7,8 +7,8 @@
 		"gpu": true
 	},
 	"mounts": [
-		"source=/data/TrueNas_pluczak/datasets,target=/datasets,type=bind,consistency=cached",
-		"source=/data/LOCAL_pluczak,target=/LOCAL,type=bind,consistency=cached",
+		"source=/data/TrueNas_CHISTERA/datasets,target=/DCA1000EVM,type=bind,consistency=cached",
+		"source=/data/LOCAL_CHISTERA,target=/LOCAL,type=bind,consistency=cached"
 	],
 	"runArgs": [
 		"--gpus",
