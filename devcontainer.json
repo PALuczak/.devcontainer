@@ -32,13 +32,8 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
-				"python.defaultInterpreterPath": "/opt/conda/bin/python",
-				"python.pythonPath": "/opt/conda/bin/python",
-				"python.formatting.provider": "black",
-				"python.linting.pylintEnabled": true,
-				"python.linting.enabled": true,
-				"python.linting.mypyEnabled": true,
-				"python.linting.flake8Enabled": true,
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+				"python.pythonPath": "/usr/local/bin/python",
 				"terminal.integrated.env.linux": {
 					"PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"
 				},
@@ -50,6 +45,7 @@
 				"ms-python.pylint",
 				"ms-python.gather",
 				"ms-python.isort",
+				"ms-python.flake8",
 				"ms-python.mypy-type-checker",
 				"ms-python.black-formatter",
 				"ms-toolsai.jupyter",
