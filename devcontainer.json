@@ -24,8 +24,6 @@
 		"ghcr.io/devcontainers/features/nvidia-cuda:1": {
 			"cudaVersion": "11.8"
 		},
-		"ghcr.io/devcontainers-contrib/features/mypy:2.0.9": {},
-		"ghcr.io/devcontainers-contrib/features/flake8:2.0.9": {},
 		"ghcr.io/devcontainers-contrib/features/ninja-asdf:2.0.9": {},
 		"ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {}
 	},
