@@ -19,7 +19,8 @@
 			"cudaVersion": "11.8"
 		},
 		"ghcr.io/devcontainers-contrib/features/ninja-asdf": {},
-		"ghcr.io/devcontainers-contrib/features/tmux-apt-get": {}
+		"ghcr.io/devcontainers-contrib/features/tmux-apt-get": {},
+		"ghcr.io/devcontainers-contrib/features/ffmpeg-apt-get": {}
 	},
 	"customizations": {
 		"vscode": {

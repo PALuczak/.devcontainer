@@ -40,6 +40,8 @@ nbconvert==7.14.1
 # Logging
 comet-ml==3.36.0
 
+# Extra 
+mediapipe==0.10.8
 
 # Anciliary
 jedi==0.19.1
