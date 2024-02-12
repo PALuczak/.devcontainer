@@ -16,7 +16,7 @@
 		"ghcr.io/devcontainers/features/git-lfs": {},
 		"ghcr.io/devcontainers/features/github-cli": {},
 		"ghcr.io/devcontainers/features/nvidia-cuda": {
-			"cudaVersion": "11.8"
+			"cudaVersion": "12.1"
 		},
 		"ghcr.io/devcontainers-contrib/features/ninja-asdf": {},
 		"ghcr.io/devcontainers-contrib/features/tmux-apt-get": {},
