@@ -46,4 +46,6 @@ jedi==0.19.1
 line-profiler==4.1.2
 
 # For cartpole env
-gymnasium[all]==0.29.1
+gymnasium[toy-text]==0.29.1
+gymnasium[classic-control]==0.29.1
+pyfuzzylite==8.0.1
