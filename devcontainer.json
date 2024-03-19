@@ -44,7 +44,8 @@
 				"visualstudioexptteam.vscodeintellicode",
 				"VisualStudioExptTeam.vscodeintellicode-completions",
 				"donjayamanne.python-environment-manager",
-				"ms-vsliveshare.vsliveshare"
+				"ms-vsliveshare.vsliveshare",
+				"mhutchie.git-graph"
 			],
 		}
 	},
