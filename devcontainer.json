@@ -1,24 +1,33 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 {
 	"name": "pluczak-dev",
 	"image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
 	"userEnvProbe": "none",
-	"hostRequirements": {
-		"gpu": true
-	},
 	"mounts": [
 		"source=/data/TrueNas_pluczak/datasets,target=/datasets,type=bind,consistency=cached",
 		"source=/data/LOCAL_pluczak,target=/LOCAL,type=bind,consistency=cached",
 	],
-	// Features to add to the dev container. More info: https://containers.dev/features.
+	// // // // // // // IF GPU avaialble
+	"hostRequirements": {
+		"gpu": true
+	},
+	"runArgs": [
+		"--gpus",
+		"all",
+		"--shm-size",
+		"4gb"
+	],
+	// // // // // // // ELSE
+	// "hostRequirements": {},
+	// // // // // // // ENDIF
 	"features": {
 		"ghcr.io/devcontainers/features/git": {},
 		"ghcr.io/devcontainers/features/git-lfs": {},
 		"ghcr.io/devcontainers/features/github-cli": {},
+		// // // // // // // IF GPU avaialble
 		"ghcr.io/devcontainers/features/nvidia-cuda": {
-			"cudaVersion": "11.8"
+			"cudaVersion": "12.4"
 		},
-		"ghcr.io/devcontainers-contrib/features/ninja-asdf": {},
+		// // // // // // // ENDIF
 		"ghcr.io/devcontainers-contrib/features/tmux-apt-get": {}
 	},
 	"customizations": {
@@ -30,7 +39,6 @@
 					"PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"
 				},
 			},
-			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
@@ -49,11 +57,7 @@
 			],
 		}
 	},
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip3 install --user -r .devcontainer/requirements.txt",
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 	"remoteUser": "vscode",
 	"updateRemoteUserUID": true
