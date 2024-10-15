@@ -56,3 +56,6 @@ mediapipe==0.10.8
 aedat==2.0.3
 # dv==1.0.12
 # dv-processing==1.7.9
+
+# Hidden Markov Models
+hmmlearn==0.3.2
