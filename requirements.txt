@@ -59,3 +59,6 @@ aedat==2.0.3
 
 # Hidden Markov Models
 hmmlearn==0.3.2 # conflict with NumPy > 2.0
+
+# Dev utils
+pip-tools==7.4.1

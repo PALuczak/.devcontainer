@@ -56,7 +56,7 @@
 			],
 		}
 	},
-	"postCreateCommand": "pip3 install --user -r .devcontainer/requirements.txt",
+	"postCreateCommand": "pip3 install --user --no-dependencies --no-warn-script-location -r .devcontainer/requirements.compiled.txt",
 	// "remoteUser": "root"
 	"remoteUser": "vscode",
 	"updateRemoteUserUID": true
