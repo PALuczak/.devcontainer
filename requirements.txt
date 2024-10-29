@@ -17,10 +17,16 @@ brevitas==0.11.0 # conflict with NumPy > 2.0
 # Data wrangning
 imageio==2.35.1
 numpy==1.26.4
-pandas==2.2.3
+pandas==2.2.2
 scipy==1.14.1
 opencv-contrib-python-headless==4.10.0.84
 einops==0.8.0
+
+# GPU accelerated procesing
+cupy-cuda12x==13.3.0
+--extra-index-url=https://pypi.nvidia.com
+cudf-cu12==24.10.*
+cuml-cu12==24.10.*
 
 # Classic learning
 scikit-learn==1.5.1
