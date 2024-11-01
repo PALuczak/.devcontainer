@@ -18,6 +18,8 @@ aiohttp==3.10.10
     #   fsspec
 aiosignal==1.3.1
     # via aiohttp
+ansicolors==1.1.8
+    # via papermill
 asttokens==2.4.1
     # via stack-data
 attrs==24.2.0
@@ -30,7 +32,7 @@ audioread==3.0.1
     # via librosa
 beautifulsoup4==4.12.3
     # via nbconvert
-bleach==6.1.0
+bleach==6.2.0
     # via
     #   nbconvert
     #   panel
@@ -60,6 +62,7 @@ click==8.1.7
     #   dask
     #   dask-cuda
     #   distributed
+    #   papermill
     #   pip-tools
 cloudpickle==3.1.0
     # via
@@ -146,6 +149,8 @@ dulwich==0.22.3
     # via comet-ml
 einops==0.8.0
     # via -r requirements.txt
+entrypoints==0.4
+    # via papermill
 everett[ini]==3.1.0
     # via comet-ml
 executing==2.1.0
@@ -330,7 +335,9 @@ multipledispatch==1.0.0
 multiprocess==0.70.16
     # via datasets
 nbclient==0.10.0
-    # via nbconvert
+    # via
+    #   nbconvert
+    #   papermill
 nbconvert==7.16.4
     # via -r requirements.txt
 nbformat==5.10.4
@@ -338,6 +345,7 @@ nbformat==5.10.4
     #   -r requirements.txt
     #   nbclient
     #   nbconvert
+    #   papermill
 nest-asyncio==1.6.0
     # via ipykernel
 networkx==3.4.2
@@ -502,6 +510,8 @@ pandocfilters==1.5.1
     # via nbconvert
 panel==1.5.3
     # via holoviews
+papermill==2.6.0
+    # via -r requirements.txt
 param==2.1.1
     # via
     #   datashader
@@ -613,6 +623,7 @@ pyyaml==6.0.2
     #   distributed
     #   huggingface-hub
     #   lightning
+    #   papermill
     #   pytorch-lightning
     #   timm
 pyzmq==26.2.0
@@ -639,6 +650,7 @@ requests==2.32.3
     #   datashader
     #   huggingface-hub
     #   panel
+    #   papermill
     #   pooch
     #   requests-toolbelt
     #   torchdata
@@ -697,7 +709,6 @@ simplejson==3.19.3
 six==1.16.0
     # via
     #   asttokens
-    #   bleach
     #   python-dateutil
 sortedcontainers==2.4.0
     # via distributed
@@ -723,7 +734,9 @@ sympy==1.13.3
 tblib==3.0.0
     # via distributed
 tenacity==9.0.0
-    # via plotly
+    # via
+    #   papermill
+    #   plotly
 threadpoolctl==3.5.0
     # via scikit-learn
 tifffile==2024.9.20
@@ -779,6 +792,7 @@ tqdm==4.66.6
     #   huggingface-hub
     #   lightning
     #   panel
+    #   papermill
     #   pytorch-lightning
     #   umap-learn
 traitlets==5.14.3

@@ -48,6 +48,7 @@ ipykernel==6.29.5
 ipywidgets==8.1.5
 nbformat==5.10.4
 nbconvert==7.16.4
+papermill==2.6.0
 
 # Logging
 comet-ml==3.47.0
