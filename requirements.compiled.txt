@@ -20,6 +20,8 @@ aiosignal==1.3.1
     # via aiohttp
 ansicolors==1.1.8
     # via papermill
+apricot-select==0.6.1
+    # via pomegranate
 asttokens==2.4.1
     # via stack-data
 attrs==24.2.0
@@ -145,7 +147,7 @@ distributed==2024.9.0
     # via rapids-dask-dependency
 distributed-ucxx-cu12==0.40.0
     # via raft-dask-cu12
-dulwich==0.22.3
+dulwich==0.22.4
     # via comet-ml
 einops==0.8.0
     # via -r requirements.txt
@@ -350,10 +352,14 @@ nest-asyncio==1.6.0
     # via ipykernel
 networkx==3.4.2
     # via
+    #   pomegranate
     #   scikit-image
     #   torch
+nose==1.3.7
+    # via apricot-select
 numba==0.60.0
     # via
+    #   apricot-select
     #   cudf-cu12
     #   cuml-cu12
     #   dask-cuda
@@ -368,6 +374,7 @@ numpy==1.26.4
     # via
     #   -r requirements.txt
     #   aedat
+    #   apricot-select
     #   bokeh
     #   brevitas
     #   contourpy
@@ -390,6 +397,7 @@ numpy==1.26.4
     #   opencv-contrib-python
     #   opencv-contrib-python-headless
     #   pandas
+    #   pomegranate
     #   pyarrow
     #   pylibraft-cu12
     #   rmm-cu12
@@ -544,6 +552,8 @@ platformdirs==4.3.6
     #   pooch
 plotly==5.24.1
     # via -r requirements.txt
+pomegranate==1.1.1
+    # via -r requirements.txt
 pooch==1.8.2
     # via librosa
 prompt-toolkit==3.0.48
@@ -656,7 +666,7 @@ requests==2.32.3
     #   torchdata
 requests-toolbelt==1.0.0
     # via comet-ml
-rich==13.9.3
+rich==13.9.4
     # via
     #   comet-ml
     #   cudf-cu12
@@ -667,7 +677,7 @@ rmm-cu12==24.10.0
     #   pylibcudf-cu12
     #   pylibraft-cu12
     #   ucxx-cu12
-rpds-py==0.20.0
+rpds-py==0.20.1
     # via
     #   jsonschema
     #   referencing
@@ -682,15 +692,18 @@ scikit-learn==1.5.1
     #   -r requirements.txt
     #   hmmlearn
     #   librosa
+    #   pomegranate
     #   pynndescent
     #   umap-learn
 scipy==1.14.1
     # via
     #   -r requirements.txt
+    #   apricot-select
     #   cuml-cu12
     #   datashader
     #   hmmlearn
     #   librosa
+    #   pomegranate
     #   pynndescent
     #   scikit-image
     #   scikit-learn
@@ -757,6 +770,7 @@ torch==2.4.1
     #   brevitas
     #   huggingface-hub
     #   lightning
+    #   pomegranate
     #   pytorch-lightning
     #   safetensors
     #   timm
@@ -788,6 +802,7 @@ tornado==6.4.1
     #   jupyter-client
 tqdm==4.66.6
     # via
+    #   apricot-select
     #   datasets
     #   huggingface-hub
     #   lightning
@@ -864,7 +879,7 @@ xxhash==3.5.0
     # via datasets
 xyzservices==2024.9.0
     # via bokeh
-yarl==1.17.0
+yarl==1.17.1
     # via aiohttp
 zict==3.0.0
     # via
