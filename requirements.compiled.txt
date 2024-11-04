@@ -32,6 +32,8 @@ attrs==24.2.0
     #   referencing
 audioread==3.0.1
     # via librosa
+av==13.1.0
+    # via -r requirements.txt
 beautifulsoup4==4.12.3
     # via nbconvert
 bleach==6.2.0
@@ -189,7 +191,7 @@ h5py==3.12.1
     # via -r requirements.txt
 hmmlearn==0.3.2
     # via -r requirements.txt
-holoviews==1.19.1
+holoviews==1.20.0
     # via umap-learn
 huggingface-hub[cli,torch]==0.25.1
     # via
@@ -715,7 +717,7 @@ seaborn==0.13.2
     #   umap-learn
 semantic-version==2.10.0
     # via comet-ml
-sentry-sdk==2.17.0
+sentry-sdk==2.18.0
     # via comet-ml
 simplejson==3.19.3
     # via comet-ml
