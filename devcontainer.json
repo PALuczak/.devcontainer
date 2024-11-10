@@ -14,7 +14,7 @@
 		"--gpus",
 		"all",
 		"--shm-size",
-		"4gb"
+		"16gb"
 	],
 	// // // // // // // ELSE
 	// "hostRequirements": {},
