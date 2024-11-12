@@ -37,23 +37,8 @@
 				"python.pythonPath": "/usr/local/bin/python",
 				"terminal.integrated.env.linux": {
 					"PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"
-				},
-			},
-			"extensions": [
-				"ms-python.python",
-				"ms-python.vscode-pylance",
-				"ms-python.pylint",
-				"ms-python.gather",
-				"ms-python.isort",
-				"ms-python.flake8",
-				"ms-python.mypy-type-checker",
-				"ms-python.black-formatter",
-				"ms-toolsai.jupyter",
-				"visualstudioexptteam.vscodeintellicode",
-				"VisualStudioExptTeam.vscodeintellicode-completions",
-				"donjayamanne.python-environment-manager",
-				"ms-vsliveshare.vsliveshare",
-			],
+				}
+			}
 		}
 	},
 	"postCreateCommand": "pip3 install --user --no-dependencies --no-warn-script-location -r .devcontainer/requirements.compiled.txt",
