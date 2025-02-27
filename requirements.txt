@@ -12,10 +12,6 @@ lightning==2.4.0
 datasets[vision,audio]==3.1.0
 huggingface-hub[torch, cli]==0.26.5
 timm==1.0.12
-# network quantization
-brevitas==0.11.0 # conflict with NumPy > 2.0
-# for hyperdimensional computing
-torch-hd==5.7.1
 
 # Data wrangning
 imageio==2.36.1
@@ -61,15 +57,6 @@ line-profiler==4.2.0
 
 # Extra 
 mediapipe==0.10.18
-
-# Events
-aedat==2.1.0
-# dv==1.0.12
-# dv-processing==1.7.9
-
-# Hidden Markov Models
-hmmlearn==0.3.3 # conflict with NumPy > 2.0
-pomegranate==1.1.1 # much faster HMM
 
 # Dev utils
 pip-tools==7.4.1
