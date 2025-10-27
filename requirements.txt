@@ -22,10 +22,18 @@ opencv-contrib-python-headless==4.10.0.84
 einops==0.8.0
 
 # GPU accelerated procesing
-#cupy-cuda12x==13.3.0
-#--extra-index-url=https://pypi.nvidia.com
-#cudf-cu12==24.10.*
-#cuml-cu12==24.10.*
+--extra-index-url=https://pypi.nvidia.com
+cudf-cu12==25.10.*
+dask-cudf-cu12==25.10.*
+cuml-cu12==25.10.*
+cugraph-cu12==25.10.*
+nx-cugraph-cu12==25.10.*
+cuxfilter-cu12==25.10.*
+cucim-cu12==25.10.*
+pylibraft-cu12==25.10.*
+raft-dask-cu12==25.10.*
+cuvs-cu12==25.10.*
+nx-cugraph-cu12==25.10.*
 
 # Classic learning
 scikit-learn==1.6.0
@@ -60,3 +68,7 @@ mediapipe==0.10.18
 
 # Dev utils
 pip-tools==7.4.1
+
+# Hidden Markov Models
+hmmlearn==0.3.2 # conflict with NumPy > 2.0
+pomegranate==1.1.1 # much faster HMM

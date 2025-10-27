@@ -3,8 +3,8 @@
 	"image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
 	"userEnvProbe": "none",
 	"mounts": [
-		"source=/data/TrueNas_pluczak/datasets,target=/datasets,type=bind,consistency=cached",
-		"source=/data/LOCAL_pluczak,target=/LOCAL,type=bind,consistency=cached",
+		"source=/data/TrueNas_MISEL/datasets,target=/datasets,type=bind,consistency=cached",
+		"source=/data/LOCAL_MISEL,target=/LOCAL,type=bind,consistency=cached"
 	],
 	// // // // // // // IF GPU avaialble
 	"hostRequirements": {
@@ -21,7 +21,7 @@
 	// // // // // // // ENDIF
 	"features": {
 		"ghcr.io/devcontainers/features/git": {},
-		"ghcr.io/devcontainers/features/git-lfs": {},
+		// "ghcr.io/devcontainers/features/git-lfs": {},
 		"ghcr.io/devcontainers/features/github-cli": {},
 		// // // // // // // IF GPU avaialble
 		"ghcr.io/devcontainers/features/nvidia-cuda": {
