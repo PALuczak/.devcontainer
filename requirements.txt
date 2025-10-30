@@ -72,3 +72,6 @@ pip-tools==7.4.1
 # Hidden Markov Models
 hmmlearn==0.3.2 # conflict with NumPy > 2.0
 pomegranate==1.1.1 # much faster HMM
+
+# Hyperdimensional
+torch-hd==5.8.4

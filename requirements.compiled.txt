@@ -10,7 +10,7 @@ absl-py==2.3.1
     # via mediapipe
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.13.1
+aiohttp==3.13.2
     # via
     #   datasets
     #   fsspec
@@ -43,7 +43,7 @@ av==14.0.1
     # via -r requirements.txt
 beautifulsoup4==4.14.2
     # via nbconvert
-bleach==6.2.0
+bleach==6.3.0
     # via
     #   nbconvert
     #   panel
@@ -198,6 +198,8 @@ einops==0.8.0
     # via -r requirements.txt
 entrypoints==0.4
     # via papermill
+et-xmlfile==2.0.0
+    # via openpyxl
 everett[ini]==3.1.0
     # via comet-ml
 executing==2.2.1
@@ -333,7 +335,7 @@ kaleido==0.2.1
     # via -r requirements.txt
 kiwisolver==1.4.9
     # via matplotlib
-lark==1.3.0
+lark==1.3.1
     # via rfc3987-syntax
 lazy-loader==0.4
     # via
@@ -535,6 +537,7 @@ numpy==1.26.4
     #   soundfile
     #   soxr
     #   tifffile
+    #   torch-hd
     #   torchmetrics
     #   torchvision
     #   treelite
@@ -612,6 +615,8 @@ nx-cugraph-cu12==25.10.0
     # via mediapipe
 opencv-contrib-python-headless==4.10.0.84
     # via -r requirements.txt
+openpyxl==3.1.5
+    # via torch-hd
 opt-einsum==3.4.0
     # via jax
 overrides==7.7.0
@@ -661,6 +666,7 @@ pandas==2.2.3
     #   holoviews
     #   panel
     #   seaborn
+    #   torch-hd
     #   umap-learn
     #   xarray
 pandocfilters==1.5.1
@@ -841,6 +847,7 @@ requests==2.32.5
     #   papermill
     #   pooch
     #   requests-toolbelt
+    #   torch-hd
     #   torchdata
 requests-toolbelt==1.0.0
     # via comet-ml
@@ -904,6 +911,7 @@ scipy==1.14.1
     #   pynndescent
     #   scikit-image
     #   scikit-learn
+    #   torch-hd
     #   treelite
     #   umap-learn
 seaborn==0.13.2
@@ -916,7 +924,7 @@ send2trash==1.8.3
     # via jupyter-server
 sentencepiece==0.2.1
     # via mediapipe
-sentry-sdk==2.42.1
+sentry-sdk==2.43.0
     # via comet-ml
 shapely==2.0.7
     # via
@@ -985,10 +993,13 @@ torch==2.5.1
     #   pytorch-lightning
     #   safetensors
     #   timm
+    #   torch-hd
     #   torchaudio
     #   torchdata
     #   torchmetrics
     #   torchvision
+torch-hd==5.8.4
+    # via -r requirements.txt
 torchaudio==2.5.1
     # via -r requirements.txt
 torchdata==0.9.0
@@ -1022,6 +1033,7 @@ tqdm==4.67.1
     #   panel
     #   papermill
     #   pytorch-lightning
+    #   torch-hd
     #   umap-learn
 traitlets==5.14.3
     # via
