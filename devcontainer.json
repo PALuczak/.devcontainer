@@ -1,6 +1,6 @@
 {
 	"name": "pluczak-dev",
-	"image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/python:3.14-trixie",
 	"userEnvProbe": "none",
 	"mounts": [
 		"source=/data/TrueNas_pluczak/datasets,target=/datasets,type=bind,consistency=cached",
@@ -25,10 +25,10 @@
 		"ghcr.io/devcontainers/features/github-cli": {},
 		// // // // // // // IF GPU avaialble
 		"ghcr.io/devcontainers/features/nvidia-cuda": {
-			"cudaVersion": "12.4"
+			"cudaVersion": "13.0"
 		},
 		// // // // // // // ENDIF
-		"ghcr.io/devcontainers-contrib/features/tmux-apt-get": {}
+		"ghcr.io/devcontainers-extra/features/tmux-apt-get": {}
 	},
 	"customizations": {
 		"vscode": {
@@ -38,7 +38,22 @@
 				"terminal.integrated.env.linux": {
 					"PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"
 				}
-			}
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.pylint",
+				"ms-python.gather",
+				"ms-python.isort",
+				"ms-python.flake8",
+				"ms-python.mypy-type-checker",
+				"ms-python.black-formatter",
+				"ms-python.debugpy",
+				"ms-toolsai.jupyter",
+				"ms-vsliveshare.vsliveshare",
+				"GitHub.copilot",
+				"mhutchie.git-graph",
+			],
 		}
 	},
 	"postCreateCommand": "pip3 install --user --no-dependencies --no-warn-script-location -r .devcontainer/requirements.compiled.txt",
