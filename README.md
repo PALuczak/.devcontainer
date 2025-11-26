@@ -1,3 +1,8 @@
+### Add to repo
+````
+git submodule add git@github.com:PALuczak/.devcontainer.git
+````
+
 ### Add to ~/.profile
 ````
 function git {
