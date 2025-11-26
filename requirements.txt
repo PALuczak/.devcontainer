@@ -12,13 +12,13 @@ lightning==2.5.6
 
 # HuggingFace
 datasets[vision,audio]==4.4.1
-huggingface-hub[torch, cli]==1.1.5
+huggingface-hub[torch]==1.1.5
 timm==1.0.22
 
 # Data wrangling
 imageio==2.37.2
 # numpy==1.26.4
-numpy==2.3.5
+numpy==2.2.6
 pandas==2.3.3
 scipy==1.16.3
 opencv-contrib-python-headless==4.12.0.88
@@ -59,7 +59,7 @@ comet-ml==3.54.2
 line-profiler==5.0.0
 
 # Extra 
-mediapipe==0.10.21
+# mediapipe==0.10.21
 
 # Dev utils
 pip-tools==7.5.2
